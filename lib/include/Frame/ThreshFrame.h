@@ -1,9 +1,9 @@
 #ifndef _VISUAL_CSE_DEFECT_DETECTOR_FRAME_THRESH_FRAME_H_
 #define _VISUAL_CSE_DEFECT_DETECTOR_THRESH_FRAME_H_
 
-#include <Frame/Frame.h>
-#include <Frame/RGBFrame.h>
-#include <Frame/HSVFrame.h>
+#include "Frame.h"
+#include "RGBFrame.h"
+#include "HSVFrame.h"
 
 class ThreshFrame : public Frame
 {

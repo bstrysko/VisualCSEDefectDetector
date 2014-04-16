@@ -19,7 +19,7 @@ REALNAME = $(OUT)
 # Include Directories
 INCLUDES = -I./include/
 
-CCFLAGS = -g -fPIC
+CCFLAGS = -g -fPIC $(shell pkg-config --cflags opencv)
 CCC = g++
 
 # Library Paths
@@ -35,7 +35,7 @@ all: build
 build: $(OUT)
  
 $(OUT): $(OBJ)
-	$(CCC) -shared -Wl,-soname,$(OUT) -o $(REALNAME) $(OBJ) 
+	$(CCC) -shared -Wl,-soname,$(OUT) -o $(REALNAME) $(OBJ) $(LIBS)
 
 .cpp.o:
 	$(CCC) $(INCLUDES) $(CCFLAGS) -c $< -o $@ 

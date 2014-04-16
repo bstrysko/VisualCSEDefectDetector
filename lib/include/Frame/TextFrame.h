@@ -1,7 +1,7 @@
 #ifndef _VISUAL_CSE_DEFECT_DETECTOR_FRAME_TEXT_FRAME_H_
 #define _VISUAL_CSE_DEFECT_DETECTOR_FRAME_TEXT_FRAME_H_
 
-#include <Frame/Frame.h>
+#include "Frame.h"
 
 class TextFrame : public Frame
 {

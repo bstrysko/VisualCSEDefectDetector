@@ -6,7 +6,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#include <Application/Window.h>
+#include "Window.h"
 
 using namespace std;
 using namespace cv;
@@ -27,7 +27,7 @@ class Application
     virtual void loop() = 0;
     virtual void keyPressed(int key) = 0;
 
-    static int stringToInt(char* s); 
+    static int stringToInt(string s); 
   public:
     ~Application();
 

@@ -41,11 +41,11 @@ Window* Application::createWindow(string name)
 	return new Window(name);
 }
 
-int Application::stringToInt(char* s)
+int Application::stringToInt(string s)
 {
     int result;
 
-    result = atoi(s);
+    result = atoi(s.c_str());
 
     if(result == 0 && s[0] != '0')
     {
