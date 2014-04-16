@@ -45,8 +45,8 @@ install: build
 	mkdir -p /usr/include/$(LNAME)/Frame/
 	mkdir -p /usr/include/$(LNAME)/Application/
 	cp include/Camera.h /usr/include/$(LNAME)/
-	cp include/Frame/* /usr/include/$(LNAME)/
-	cp include/Application/* /usr/include/$(LNAME)/
+	cp include/Frame/* /usr/include/$(LNAME)/Frame/
+	cp include/Application/* /usr/include/$(LNAME)/Application/
 	cp $(REALNAME) /usr/lib/
 	ln -sf /usr/lib/$(REALNAME) /usr/lib/$(LIBNAME)
 
