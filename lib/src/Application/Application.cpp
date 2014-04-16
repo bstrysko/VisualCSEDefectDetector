@@ -40,3 +40,19 @@ Window* Application::createWindow(string name)
 {
 	return new Window(name);
 }
+
+int Application::stringToInt(char* s)
+{
+    int result;
+
+    result = atoi(s);
+
+    if(result == 0 && s[0] != '0')
+    {
+        stringstream o;
+        o << s << " is not a number";
+        throw ios_base::failure(o.str());
+    }
+
+	return result;
+}

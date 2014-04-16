@@ -26,6 +26,8 @@ class Application
     virtual void setup(vector<string> argv) = 0;
     virtual void loop() = 0;
     virtual void keyPressed(int key) = 0;
+
+    static int stringToInt(char* s); 
   public:
     ~Application();
 
